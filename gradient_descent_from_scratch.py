@@ -13,6 +13,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 # Reading in the csv file
+# https://github.com/codebasics/py/blob/master/DeepLearningML/6_gradient_descent/insurance_data.csv
 data = pd.read_csv("insurance.csv")
 
 X_train, X_test, y_train, y_test = train_test_split(data[['age','affordibility']], data.bought_insurance, test_size = 0.2)
